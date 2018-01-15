@@ -1,4 +1,4 @@
-var defaultPrefix = new Buffer("\2")
+var defaultPrefix = new Buffer("\u0002")
 // details: https://www.kernel.org/pub/software/scm/git/docs/technical/protocol-capabilities.txt (side-band)
 module.exports = function encode(string, prefix) {
   // \1 is an error message
